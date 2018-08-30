@@ -1,34 +1,26 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
-import React, {Component} from 'react';
+import React from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './Component/Judul';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
-    /*style={{width:400,height:400}
-        resizeMode="contain"*/
+
 });
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React-Native!</Text>
+        <Judul/>
+        <Text style={styles.welcome}>Hai!</Text>
         <Text style={styles.instructions}>Nama : Grace Dian</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 3</Text>
         <Text style={styles.instructions}>Absen : 22 </Text>
-        <Image source={require('./a.jpg')} style={{width:200,height:200}} 
-        />
+        <Image source={require('./a.jpg')} style={{width:200,height:200}} />
       </View>
     );
   }
@@ -39,7 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#92DDF4',
   },
   welcome: {
     fontSize: 20,
