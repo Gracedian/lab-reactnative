@@ -8,14 +8,16 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 
-});
+});       
 
 type Props = {};
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Judul/>
+        <Judul title="Biodata"/>
+        <Judul title="Login"/>
+        <Judul title="Nambah"/>
         <Text style={styles.welcome}>Hai!</Text>
         <Text style={styles.instructions}>Nama : Grace Dian</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 3</Text>
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92DDF4',
+    backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
@@ -44,3 +46,4 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+  
