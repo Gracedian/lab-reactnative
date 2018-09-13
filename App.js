@@ -1,28 +1,14 @@
 import React from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import {Platform, StatusBar, StyleSheet, Text, View, Image} from 'react-native';
 import Judul from './Component/Judul';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-
-});       
+import Login from './SignUp/Login';      
 
 type Props = {};
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Judul title="Biodata"/>
-        <Judul title="Login"/>
-        <Judul title="Nambah"/>
-        <Text style={styles.welcome}>Hai!</Text>
-        <Text style={styles.instructions}>Nama : Grace Dian</Text>
-        <Text style={styles.instructions}>Kelas : XI RPL 3</Text>
-        <Text style={styles.instructions}>Absen : 22 </Text>
-        <Image source={require('./a.jpg')} style={{width:200,height:200}} />
+      <Login/>
       </View>
     );
   }
@@ -32,7 +18,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
